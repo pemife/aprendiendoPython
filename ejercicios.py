@@ -1,7 +1,7 @@
 #---------------------------------------------------------
 # EJERCICIOS SIMPLES
 #---------------------------------------------------------
-'''
+
 def ej2():
     cadena = "おはよう世界"
     print("ejercicio2:  " + cadena)
@@ -57,10 +57,10 @@ def ej7():
     "\n\n" +
     "\t\t   IMC: " + str(imc) + "\n\n" +
     "-------------------------------------------------\n" +
-    "| Peso inferior al normal \t|  18.5\t\t|\n" +
+    "| Peso inferior al normal \t|  <18.5\t\t|\n" +
     "| Peso normal \t\t\t|  18.5 - 24.9\t|\n" +
     "| Peso superior al normal\t|  25.0 - 29.9\t|\n" +
-    "| Obesidad\t\t\t|  +30.0\t|\n" +
+    "| Obesidad\t\t\t|  >30.0\t|\n" +
     "-------------------------------------------------"
     )
 
@@ -99,13 +99,13 @@ def ej9():
 #ej7()
 #ej8()
 #ej9()
-'''
+
 
 #---------------------------------------------------------
 # EJERCICIOS DE CONDICIONALES
 #---------------------------------------------------------
 
-def ej1():
+def ej11():
     while True:
         try:
             edad = int(input("dame tu edad: "))
@@ -126,4 +126,14 @@ def ej1():
     else:
         print("WTF edad es esa?")
 
-ej1()
+def ej12():
+    contrasenia = input("Dame una contraseña: ")
+    reContrasenia = input("Repite la contraseña: ")
+    if contrasenia.lower() == reContrasenia.lower():
+        print("Las contraseñas coinciden")
+    else:
+        print("Las contraseñas coinciden")
+
+
+#ej11()
+#ej12()
